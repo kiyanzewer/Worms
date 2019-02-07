@@ -61,8 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\bulletScript.cs" />
-    <Compile Include="Assets\Scripts\FirstPlayerMovement.cs" />
-    <Compile Include="Assets\Testing.cs" />
+    <Compile Include="Assets\Scripts\TankScript.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/calvinjmin/Documents/Worms/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
