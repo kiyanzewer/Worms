@@ -10,6 +10,7 @@ public class TankScript : MonoBehaviour
     public float speed;
     public GameObject bullet;
     public Text log;
+    public Slider powerSlider;
 
 
     // Start is called before the first frame update
@@ -44,7 +45,7 @@ public class TankScript : MonoBehaviour
 
     IEnumerator produceBullet()
     {
-        WriteLog("Created Bullet");
+        WriteLog("Buller shot with the power of " + powerSlider.value);
         yield return new WaitForSeconds(2);
         WriteLog("");
     }

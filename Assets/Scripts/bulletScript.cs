@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class bulletScript : MonoBehaviour
 {
     // Public variable 
-    public float speed;
+    public Slider powerSlider;
     private Rigidbody2D r2d;
     private Vector2 movement;
 
@@ -13,13 +14,13 @@ public class bulletScript : MonoBehaviour
     void Start()
     {
         r2d = GetComponent<Rigidbody2D>();
-        movement = new Vector2(10,5);
+        movement = new Vector2( Mathf.Sqrt(Mathf.Pow(powerSlider.value,2)) / 10 , Mathf.Sqrt(Mathf.Pow(powerSlider.value, 2)) / 10 );
         r2d.velocity = movement;
     }
 
     void update()
     {
-        r2d.AddForce(movement * speed);
+        r2d.AddForce(movement * 1);
     }
 
     // Function called when the object goes out of the screen

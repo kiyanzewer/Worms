@@ -114,4 +114,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967f89de5471a402dbb14275fbcfdc2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  powerSlider: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
+    type: 3}
