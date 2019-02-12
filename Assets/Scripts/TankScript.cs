@@ -10,23 +10,31 @@ public class TankScript : MonoBehaviour
     public float speed;
     public GameObject bullet;
     public Text log;
+    public Slider powerSlider;
+    public Slider angleSlider;
+    public Button fireButton;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        Button btn = fireButton.GetComponent<Button>();
+        btn.onClick.AddListener(ShootBullet);
         log.text = "";
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(produceBullet());
-            Instantiate(bullet, transform.position, Quaternion.identity);
-        }
+    }
+
+    void ShootBullet()
+    { 
+        StartCoroutine(ProduceBullet());
+        var tempBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        tempBullet.SendMessage("InitialVelocity", new Vector2(powerSlider.value * 5, angleSlider.value * 5));
+
     }
 
     void FixedUpdate()
@@ -42,10 +50,10 @@ public class TankScript : MonoBehaviour
         log.text = text;
     }
 
-    IEnumerator produceBullet()
+    IEnumerator ProduceBullet()
     {
-        WriteLog("Created Bullet");
+        WriteLog("Bullet shot with the power of " + powerSlider.value + "\n" + 
+                 "Bullet shot with the angle of " + angleSlider.value);
         yield return new WaitForSeconds(2);
-        WriteLog("");
     }
 }
