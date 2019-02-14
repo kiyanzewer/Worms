@@ -327,7 +327,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 65.000015, y: -40.6}
-  m_SizeDelta: {x: 50, y: 20}
+  m_SizeDelta: {x: 75, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272760381
 MonoBehaviour:
@@ -362,7 +362,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Angle
+  m_Text: Y - Power
 --- !u!222 &272760382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -445,6 +445,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537815321}
   m_CullTransparentMesh: 0
+--- !u!1 &544555408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 137050, guid: 0ee64ff31b8ad344782ee63849d96932,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938404648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &725937360
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +486,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 285, y: -40.6}
-  m_SizeDelta: {x: 50, y: 20}
+  m_SizeDelta: {x: 75, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &725937362
 MonoBehaviour:
@@ -515,7 +521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Power
+  m_Text: X - Power
 --- !u!222 &725937363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -946,6 +952,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188879995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 181536, guid: dc3ba7ed85285e84aa542b45dda7ccbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 185990664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1500222235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,6 +1343,16 @@ PrefabInstance:
       propertyPath: fireButton
       value: 
       objectReference: {fileID: 1500222237}
+    - target: {fileID: 8440192217873549599, guid: 0ee64ff31b8ad344782ee63849d96932,
+        type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 544555408}
+    - target: {fileID: 8440192217873549599, guid: 0ee64ff31b8ad344782ee63849d96932,
+        type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1188879995}
     - target: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
         type: 3}
       propertyPath: m_LinearDrag

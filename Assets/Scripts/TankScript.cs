@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TankScript : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    private bool playerTurn;
 
     public float speed;
     public GameObject bullet;
@@ -21,7 +22,8 @@ public class TankScript : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         Button btn = fireButton.GetComponent<Button>();
         btn.onClick.AddListener(ShootBullet);
-        log.text = "";
+        log.text = "Player 1's Turn";
+        playerTurn = true;
     }
 
     // Update is called once per frame
@@ -55,5 +57,15 @@ public class TankScript : MonoBehaviour
         WriteLog("Bullet shot with the power of " + powerSlider.value + "\n" + 
                  "Bullet shot with the angle of " + angleSlider.value);
         yield return new WaitForSeconds(2);
+        if (playerTurn)
+        {
+            log.text = "Player 2's Turn";
+            playerTurn = false;
+        }
+        else
+        {
+            log.text = "Player 1's Turn";
+            playerTurn = true;
+        }
     }
 }
