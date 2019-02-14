@@ -662,7 +662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 50
+  m_Text: 0
 --- !u!222 &854982716
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1146,7 +1146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 45
+  m_Text: 0
 --- !u!222 &1530163644
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1480,12 +1480,17 @@ PrefabInstance:
     - target: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
         type: 3}
       propertyPath: m_Value
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
         type: 3}
       propertyPath: m_MaxValue
-      value: 180
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 1411234462721508312, guid: 8c674084146d749c5830969267edda91,
         type: 3}
@@ -1814,6 +1819,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
+        type: 3}
+      propertyPath: m_MinValue
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1411234462721508312, guid: 8c674084146d749c5830969267edda91,
         type: 3}

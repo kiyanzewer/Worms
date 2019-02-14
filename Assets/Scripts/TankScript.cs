@@ -10,6 +10,10 @@ public class TankScript : MonoBehaviour
 
     public float speed;
     public GameObject bullet;
+
+    public GameObject player1;
+    public GameObject player2;
+
     public Text log;
     public Slider powerSlider;
     public Slider angleSlider;
@@ -22,6 +26,7 @@ public class TankScript : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         Button btn = fireButton.GetComponent<Button>();
         btn.onClick.AddListener(ShootBullet);
+
         log.text = "Player 1's Turn";
         playerTurn = true;
     }
@@ -34,7 +39,15 @@ public class TankScript : MonoBehaviour
     void ShootBullet()
     { 
         StartCoroutine(ProduceBullet());
-        var tempBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        GameObject tempBullet = new GameObject();
+        if ( playerTurn)
+        {
+            tempBullet = Instantiate(bullet, player1.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            tempBullet = Instantiate(bullet, player2.transform.position, Quaternion.identity);
+        }
         tempBullet.SendMessage("InitialVelocity", new Vector2(powerSlider.value * 5, angleSlider.value * 5));
 
     }
@@ -54,8 +67,8 @@ public class TankScript : MonoBehaviour
 
     IEnumerator ProduceBullet()
     {
-        WriteLog("Bullet shot with the power of " + powerSlider.value + "\n" + 
-                 "Bullet shot with the angle of " + angleSlider.value);
+        WriteLog("Bullet shot with an X-Velocity of " + powerSlider.value + "\n" + 
+                 "Bullet shot with a Y-Velocity of " + angleSlider.value);
         yield return new WaitForSeconds(2);
         if (playerTurn)
         {
