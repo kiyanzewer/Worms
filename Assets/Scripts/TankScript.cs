@@ -18,6 +18,7 @@ public class TankScript : MonoBehaviour
     public float speed;
     public GameObject bullet;
     public GameObject laser;
+    public GameObject saw;
 
     public GameObject player1;
     public GameObject player2;
@@ -42,7 +43,7 @@ public class TankScript : MonoBehaviour
         Button powerBtn = powerUps.GetComponent<Button>();
         powerBtn.onClick.AddListener(PowerUpdate);
 
-        log.text = "Player 1's Turn";
+        log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
         playerTurn = true;
         xPowerSlider.value = 50;
         yPowerSlider.value = 0;
@@ -60,10 +61,17 @@ public class TankScript : MonoBehaviour
         if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Laser")
         {
             weapon = laser;
+            WriteLog("Weapon: Laser");
+        }
+        else if ( powerUpsDropdown.options[powerUpsDropdown.value].text == "Saw")
+        {
+            weapon = saw;
+            WriteLog("Weapon: Saw");
         }
         else
         {
             weapon = bullet;
+            WriteLog("Weapon: Bullet");
         }
     }
 
@@ -75,27 +83,13 @@ public class TankScript : MonoBehaviour
             GameObject tempBullet = new GameObject();
             if (playerTurn)
             {
-                if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Bullet Mirage")
-                {
-                    BulletMirage(player1.transform.position);
-                }
-                else
-                {
                     tempBullet = Instantiate(weapon, player1.transform.position, Quaternion.identity);
                     tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
-                }
             }
             else
             {
-                if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Bullet Mirage")
-                {
-                    BulletMirage(player2.transform.position);
-                }
-                else
-                {
                     tempBullet = Instantiate(weapon, player2.transform.position, Quaternion.identity);
                     tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
-                }
             }
         }
         catch ( NullReferenceException e )
@@ -126,7 +120,7 @@ public class TankScript : MonoBehaviour
                       "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
             yield return new WaitForSeconds(2);
             logBackground("Player 1: Bullet shot with an X-Velocity of " + xPowerSlider.value , "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
-            log.text = "Player 2's Turn";
+            log.text = "Player 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
             xPowerSlider.value = -50;
             yPowerSlider.value = 0;
             playerTurn = false;
@@ -138,7 +132,7 @@ public class TankScript : MonoBehaviour
                       "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
             logBackground(" Player 2: Bullet shot with an X-Velocity of " + xPowerSlider.value, "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
             yield return new WaitForSeconds(2);
-            log.text = "Player 1's Turn";
+            log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
             xPowerSlider.value = 50;
             yPowerSlider.value = 0;
             playerTurn = true;
