@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 398}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,12 +42,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 679, y: 498}
   m_MaxSize: {x: 14002, y: 14048}
   vertical: 0
   controlID: 79
+=======
+    width: 1440
+    height: 746
+  m_MinSize: {x: 683, y: 348}
+  m_MaxSize: {x: 12008, y: 8048}
+  vertical: 0
+  controlID: 55
+>>>>>>> CalvinMAC
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -65,8 +74,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1531
     y: 0
+<<<<<<< HEAD
     width: 389
     height: 947
+=======
+    width: 292
+    height: 746
+>>>>>>> CalvinMAC
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -91,8 +105,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 379
     height: 573
+=======
+    width: 284
+    height: 451
+>>>>>>> CalvinMAC
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -116,6 +135,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 573
     width: 1531
     height: 374
@@ -126,6 +146,18 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
+=======
+    y: 451
+    width: 1148
+    height: 295
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 18}
+  m_Selected: 1
+>>>>>>> CalvinMAC
   m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -213,12 +245,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
     height: 947
   m_MinSize: {x: 404, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
   controlID: 80
+=======
+    width: 1148
+    height: 746
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
+  vertical: 1
+  controlID: 56
+>>>>>>> CalvinMAC
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +284,11 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 81
+=======
+  controlID: 57
+>>>>>>> CalvinMAC
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,11 +306,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 379
     y: 0
+<<<<<<< HEAD
     width: 1152
     height: 573
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 16}
+=======
+    width: 864
+    height: 451
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> CalvinMAC
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
@@ -347,9 +400,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 701b0000
     m_LastClickedID: 7024
     m_ExpandedIDs: 0000000090090000160e00009015000062180000441b0000ce1c000000ca9a3b
+=======
+    m_SelectedIDs: de260000
+    m_LastClickedID: 9950
+    m_ExpandedIDs: 000000006a090000d00d0000d8140000e21400008a170000b61b0000
+>>>>>>> CalvinMAC
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +436,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000090090000160e00009015000062180000441b0000ce1c0000
+=======
+    m_ExpandedIDs: 000000006a090000d00d0000d8140000e21400008a170000b61b0000
+>>>>>>> CalvinMAC
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -402,10 +465,14 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 76390000
+    m_LastClickedInstanceID: 14710
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c623000000000000
+=======
+    m_ExpandedInstanceIDs: c6230000ba0c000000000000
+>>>>>>> CalvinMAC
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,7 +565,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 5cdeffff82deffffacdeffffecdeffffeedeffff2edfffff30dfffff04e1ffff06e1ffff42e3ffffaae6ffff98eaffffaaedffffeaf3ffff1ef8ffff44fbffff46fbffffd4fbffff023b000002440000
+=======
+      m_ExpandedIDs: d4fbffff
+>>>>>>> CalvinMAC
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Particle System
@@ -553,9 +624,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 640.5696, y: 252.49844, z: 9}
     speed: 2
     m_Value: {x: 640.5696, y: 252.49844, z: 9}
+=======
+    m_Target: {x: 298.6624, y: 317.9402, z: -5.875}
+    speed: 2
+    m_Value: {x: 298.6624, y: 317.9402, z: -5.875}
+>>>>>>> CalvinMAC
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -587,9 +664,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 761.70935
     speed: 2
     m_Value: 761.70935
+=======
+    m_Target: 756.62946
+    speed: 2
+    m_Value: 756.62946
+>>>>>>> CalvinMAC
   m_Ortho:
     m_Target: 1
     speed: 2

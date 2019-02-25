@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Characters.unity
+=======
+- path: Assets/Scenes/PlayScene.unity
+>>>>>>> CalvinMAC
   isLoaded: 1
   isActive: 1
