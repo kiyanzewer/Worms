@@ -57,21 +57,28 @@ public class TankScript : MonoBehaviour
     }
 
     void PowerUpdate() {
-        Debug.Log("Power Up is changed to " + powerUpsDropdown.options[powerUpsDropdown.value].text);
-        if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Laser")
+        try
         {
-            weapon = laser;
-            WriteLog("Weapon: Laser");
+            Debug.Log("Power Up is changed to " + powerUpsDropdown.options[powerUpsDropdown.value].text);
+            if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Laser")
+            {
+                weapon = laser;
+                WriteLog("Weapon: Laser");
+            }
+            else if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Saw")
+            {
+                weapon = saw;
+                WriteLog("Weapon: Saw");
+            }
+            else
+            {
+                weapon = bullet;
+                WriteLog("Weapon: Bullet");
+            }
         }
-        else if ( powerUpsDropdown.options[powerUpsDropdown.value].text == "Saw")
+        catch ( Exception e )
         {
-            weapon = saw;
-            WriteLog("Weapon: Saw");
-        }
-        else
-        {
-            weapon = bullet;
-            WriteLog("Weapon: Bullet");
+            WriteLog("Invalid Weapon: Nothing was selected.");
         }
     }
 
@@ -153,16 +160,4 @@ public class TankScript : MonoBehaviour
         }
     }
 
-    void BulletMirage( Vector2 position )
-    {
-        GameObject bulletMirage = new GameObject();
-        int temp = 0;
-            for (int i = 0; i < 10; i++)
-            {
-                bulletMirage = Instantiate(weapon, position, Quaternion.identity);
-                temp = randomNum.Next(-20, 20);
-                bulletMirage.SendMessage("InitialVelocity", new Vector2((xPowerSlider.value + temp) * 7, (yPowerSlider.value + temp) * 7));
-            }
-        
-    }
 }
