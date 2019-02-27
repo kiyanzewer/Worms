@@ -1,4 +1,16 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Characters.unity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- path: Assets/Scenes/Characters.unity
+=======
+- path: Assets/Scenes/PlayScene.unity
+>>>>>>> CalvinMAC
+=======
+- path: Assets/Scenes/MainMenu.unity
+>>>>>>> master
+>>>>>>> master
   isLoaded: 1
   isActive: 1
