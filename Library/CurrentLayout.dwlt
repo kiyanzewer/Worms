@@ -45,9 +45,10 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 498}
-  m_MaxSize: {x: 14002, y: 14048}
+  m_MinSize: {x: 683, y: 498}
+  m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
+<<<<<<< HEAD
   controlID: 79
 =======
     width: 1440
@@ -57,6 +58,13 @@ MonoBehaviour:
   vertical: 0
   controlID: 55
 >>>>>>> CalvinMAC
+=======
+<<<<<<< HEAD
+  controlID: 10
+=======
+  controlID: 91
+>>>>>>> master
+>>>>>>> master
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -77,12 +85,17 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 389
     height: 947
+<<<<<<< HEAD
 =======
     width: 292
     height: 746
 >>>>>>> CalvinMAC
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> master
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -146,6 +159,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 18}
   m_Selected: 0
+<<<<<<< HEAD
 =======
     y: 451
     width: 1148
@@ -159,6 +173,9 @@ MonoBehaviour:
   m_Selected: 1
 >>>>>>> CalvinMAC
   m_LastSelected: 0
+=======
+  m_LastSelected: 1
+>>>>>>> master
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,9 +265,10 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1531
     height: 947
-  m_MinSize: {x: 404, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 80
 =======
     width: 1148
@@ -260,6 +278,13 @@ MonoBehaviour:
   vertical: 1
   controlID: 56
 >>>>>>> CalvinMAC
+=======
+<<<<<<< HEAD
+  controlID: 11
+=======
+  controlID: 92
+>>>>>>> master
+>>>>>>> master
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -281,14 +306,21 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 573
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 81
 =======
   controlID: 57
 >>>>>>> CalvinMAC
+=======
+  controlID: 12
+=======
+  controlID: 93
+>>>>>>> master
+>>>>>>> master
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,6 +343,7 @@ MonoBehaviour:
     height: 573
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
+<<<<<<< HEAD
   m_ActualView: {fileID: 16}
 =======
     width: 864
@@ -319,12 +352,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
 >>>>>>> CalvinMAC
+=======
+  m_ActualView: {fileID: 17}
+>>>>>>> master
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -395,11 +431,18 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\zewerkk19\Desktop\Worms
+  m_LastProjectPath: C:\Users\marchatj19\Desktop\Worms
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 3}
+    m_SelectedIDs: 32380000
+    m_LastClickedID: 14386
+    m_ExpandedIDs: 0000000040260000ca2a00005232000024350000063800009039000000ca9a3b
+=======
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 701b0000
     m_LastClickedID: 7024
@@ -409,6 +452,12 @@ MonoBehaviour:
     m_LastClickedID: 9950
     m_ExpandedIDs: 000000006a090000d00d0000d8140000e21400008a170000b61b0000
 >>>>>>> CalvinMAC
+=======
+    m_SelectedIDs: 741b0000
+    m_LastClickedID: 7028
+    m_ExpandedIDs: 00000000900900001a0e00009215000066180000481b0000d21c000000ca9a3b
+>>>>>>> master
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -437,10 +486,17 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000090090000160e00009015000062180000441b0000ce1c0000
 =======
     m_ExpandedIDs: 000000006a090000d00d0000d8140000e21400008a170000b61b0000
 >>>>>>> CalvinMAC
+=======
+    m_ExpandedIDs: 0000000040260000ca2a000052320000243500000638000090390000
+=======
+    m_ExpandedIDs: 00000000900900001a0e00009215000066180000481b0000d21c0000
+>>>>>>> master
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -465,10 +521,16 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 76390000
     m_LastClickedInstanceID: 14710
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> master
     m_ExpandedInstanceIDs: c623000000000000
 =======
     m_ExpandedInstanceIDs: c6230000ba0c000000000000
@@ -566,33 +628,40 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 5cdeffff82deffffacdeffffecdeffffeedeffff2edfffff30dfffff04e1ffff06e1ffff42e3ffffaae6ffff98eaffffaaedffffeaf3ffff1ef8ffff44fbffff46fbffffd4fbffff023b000002440000
 =======
       m_ExpandedIDs: d4fbffff
 >>>>>>> CalvinMAC
+=======
+      m_ExpandedIDs: ccfbffff
+=======
+      m_ExpandedIDs: babbffff64bcffffd4bcfffffebcffff28bdffff52bdffff7cbdffff8ebeffff90beffff24bfffff4ebfffff78bfffffa0c0ffff6ec3ffffb0c4ffffb2c4ffff58c5ffff18c6ffffeec6ffff4ecaffffa2caffffdecaffff9ed5ffffa0d5ffffcad5ffffe0dbffffe2dcffffc6ddffffc8ddfffff6deffff94dfffff24e4ffff66e4ffffa0e4fffffae4ffffb0e8ffffb2e8ffff3ee9ffff90ebffff92ebffffbcebffffe6ebffffd0ecffff42edffff48f0ffffb6f0ffffb8f0ffff46f1ffff70f1ffff9af1ffffd8f1ffff94f4ffff46f7ffff2afbffff2cfbffffd4fbffff343c0000483c00005a3c0000a83d0000e8400000184300002a4300003c4500003a470000084b0000244b0000884d0000104f0000604f0000864f0000984f00001c510000d051000048530000fc5300008c5500009e550000fc5c00000e5d0000ec7f0000ae8200009e8300006488000076880000788b00008a8b0000d89d000000a2000014a4000060aa00007cac0000c0ac0000ccac0000
+>>>>>>> master
+>>>>>>> master
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Particle System
-        m_OriginalName: Particle System
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -7948
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 3cd2849a2b772da4097e7b1324801855
+  m_WindowGUID: 4755ae50537c42a4389a2fc0e20e0b39
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -609,7 +678,8 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 0}
+    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
+      type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -618,12 +688,13 @@ MonoBehaviour:
     width: 1148
     height: 553
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_WindowGUID: c32d61869a8154a41a67bf5f7f207ac8
+  m_WindowGUID: b0a53b1f2443fd1478892d0c3128b919
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 640.5696, y: 252.49844, z: 9}
     speed: 2
@@ -633,6 +704,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 298.6624, y: 317.9402, z: -5.875}
 >>>>>>> CalvinMAC
+=======
+    m_Target: {x: 910.35956, y: 355.5407, z: -17.762627}
+    speed: 2
+    m_Value: {x: 910.35956, y: 355.5407, z: -17.762627}
+=======
+    m_Target: {x: 627.951, y: 288.00482, z: -4.125}
+    speed: 2
+    m_Value: {x: 627.951, y: 288.00482, z: -4.125}
+>>>>>>> master
+>>>>>>> master
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -665,6 +746,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 761.70935
     speed: 2
     m_Value: 761.70935
@@ -673,6 +755,16 @@ MonoBehaviour:
     speed: 2
     m_Value: 756.62946
 >>>>>>> CalvinMAC
+=======
+    m_Target: 1778.3011
+    speed: 2
+    m_Value: 1778.3011
+=======
+    m_Target: 687.5004
+    speed: 2
+    m_Value: 687.5004
+>>>>>>> master
+>>>>>>> master
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -732,7 +824,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -785,8 +877,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 718
-    width: 1366
-    height: 308
+    x: 0
+    y: 646
+    width: 1529
+    height: 354
   m_PersistentViewDataDictionary: {fileID: 0}
