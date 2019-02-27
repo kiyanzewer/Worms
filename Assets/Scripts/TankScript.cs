@@ -29,7 +29,14 @@ public class TankScript : MonoBehaviour
     public Slider xPowerSlider;
     public Slider yPowerSlider;
     public Button fireButton;
+<<<<<<< HEAD
     public Button powerUps;
+=======
+    public float areaOfEffect;
+    public LayerMask destructible;
+    public int damage;
+    public GameObject effect;
+>>>>>>> master
 
 
     // Start is called before the first frame update
@@ -75,6 +82,7 @@ public class TankScript : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     void ShootBullet()
     {
         try
@@ -96,6 +104,14 @@ public class TankScript : MonoBehaviour
         {
             Debug.Log("INPUT A VALID WEAPON THROUGH THE POWER UPS!");
         }
+=======
+    void ShootBullet()
+    { 
+        StartCoroutine(ProduceBullet());
+        var tempBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        tempBullet.SendMessage("InitialVelocity", new Vector2(powerSlider.value * 5, angleSlider.value * 5));
+
+>>>>>>> master
     }
 
     void FixedUpdate()
@@ -113,6 +129,7 @@ public class TankScript : MonoBehaviour
 
     IEnumerator ProduceBullet()
     {
+<<<<<<< HEAD
         if (playerTurn)
         {
             WriteLog( "Player 1: \n" +
@@ -164,5 +181,38 @@ public class TankScript : MonoBehaviour
                 bulletMirage.SendMessage("InitialVelocity", new Vector2((xPowerSlider.value + temp) * 7, (yPowerSlider.value + temp) * 7));
             }
         
+=======
+        WriteLog("Bullet shot with the power of " + powerSlider.value + "\n" + 
+                 "Bullet shot with the angle of " + angleSlider.value);
+        yield return new WaitForSeconds(2);
+        if (playerTurn)
+        {
+            log.text = "Player 2's Turn";
+            playerTurn = false;
+        }
+        else
+        {
+            log.text = "Player 1's Turn";
+            playerTurn = true;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if( collision.CompareTag("Environment"))
+        {
+            Collider2D[] objectsToDamage = Physics2D.OverlapCircleAll(transform.position, areaOfEffect, destructible);
+            for( int i = 0; i < objectsToDamage.Length; i++)
+            {
+                objectsToDamage[i].GetComponent<Destructable>().health -= damage;
+            }
+            Instantiate(effect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, areaOfEffect);
+>>>>>>> master
     }
 }
