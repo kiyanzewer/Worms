@@ -14,6 +14,10 @@ public class TankScript : MonoBehaviour
     public Slider powerSlider;
     public Slider angleSlider;
     public Button fireButton;
+    public float areaOfEffect;
+    public LayerMask destructible;
+    public int damage;
+    public GameObject effect;
 
 
     // Start is called before the first frame update
@@ -67,5 +71,23 @@ public class TankScript : MonoBehaviour
             log.text = "Player 1's Turn";
             playerTurn = true;
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if( collision.CompareTag("Environment"))
+        {
+            Collider2D[] objectsToDamage = Physics2D.OverlapCircleAll(transform.position, areaOfEffect, destructible);
+            for( int i = 0; i < objectsToDamage.Length; i++)
+            {
+                objectsToDamage[i].GetComponent<Destructable>().health -= damage;
+            }
+            Instantiate(effect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, areaOfEffect);
     }
 }
