@@ -337,7 +337,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Special Power:
 
-    Shoot cactuses'
+    Shoots cactuses'
 --- !u!222 &150774094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -989,7 +989,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Special Power:
 
-    Fly into others'
+    Fly into others damage them and fly back'
 --- !u!222 &890447080
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1070,7 +1070,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Special Power:
 
-    Gas powers'
+    Gas powers, will use his lactose intolerant skills to stun and damage you'
 --- !u!222 &945081088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2156,7 +2156,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Special Power:
 
-    Invisibility'
+    Invisibile for a round not allowing you to be attacked'
 --- !u!222 &1441094430
 CanvasRenderer:
   m_ObjectHideFlags: 0
