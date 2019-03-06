@@ -9,6 +9,10 @@ public class bulletScript : MonoBehaviour
     public Slider powerSlider;
     public Rigidbody2D r2d;
     private Vector2 movement;
+    public float areaOfEffect;
+    public LayerMask destructible;
+    public int environmentDamage;
+    public GameObject effect;
 
 
     // Function called once when the bullet is created
@@ -22,10 +26,22 @@ public class bulletScript : MonoBehaviour
     }
 
     // Function called when the object goes out of the screen
-    void OnBecameInvisible()
+    //void OnBecameInvisible()
+    //{
+    // Destroy the bullet 
+    //  Destroy(gameObject);
+    //}
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        // Destroy the bullet 
-        Destroy(gameObject);
+        if( collision.CompareTag("Environment"))
+        {
+            Collider2D[] objectsToDamage = Physics2D.OverlapCircleAll(transform.position, areaOfEffect, destructible);
+            for( int i = 0; i < objectsToDamage.Length;i++)
+            {
+              objectsToDamage[i].GetComponent<Destructable>().health -= environmentDamage;
+            }
+            Destroy(gameObject);
+        }
     }
 
     void InitialVelocity( Vector2 v )

@@ -30,6 +30,10 @@ public class TankScript : MonoBehaviour
     public Slider yPowerSlider;
     public Button fireButton;
     public Button powerUps;
+    public float areaOfEffect;
+    public LayerMask destructible;
+    public int damage;
+    public GameObject effect;
 
 
     // Start is called before the first frame update
@@ -158,6 +162,11 @@ public class TankScript : MonoBehaviour
             Debug.Log(x + "\n" + y);
             player2Logs[(int)player2Loc] = x + " " + y;
         }
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, areaOfEffect);
     }
 
 }

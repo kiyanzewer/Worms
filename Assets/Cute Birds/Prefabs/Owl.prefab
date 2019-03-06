@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 21263662}
   - component: {fileID: 8440192217873549599}
   - component: {fileID: 8461492538500516897}
+  - component: {fileID: 8426627483284219487}
   m_Layer: 0
   m_Name: Owl
   m_TagString: Untagged
@@ -95,7 +96,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   bullet: {fileID: 0}
+  laser: {fileID: 0}
+  saw: {fileID: 0}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  powerUpsDropdown: {fileID: 0}
   log: {fileID: 0}
+  xPowerSlider: {fileID: 0}
+  yPowerSlider: {fileID: 0}
+  fireButton: {fileID: 0}
+  powerUps: {fileID: 0}
+  areaOfEffect: 10
+  destructible:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  damage: 3
+  effect: {fileID: 0}
 --- !u!50 &8461492538500516897
 Rigidbody2D:
   serializedVersion: 4
@@ -117,3 +133,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &8426627483284219487
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.05, y: 14.02}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 13.05, y: 14.02}
+  m_EdgeRadius: 0
