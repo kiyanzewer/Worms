@@ -57,10 +57,11 @@ public class TankScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    void PowerUpdate() {
+    void PowerUpdate()
+    {
         try
         {
             Debug.Log("Power Up is changed to " + powerUpsDropdown.options[powerUpsDropdown.value].text);
@@ -80,14 +81,18 @@ public class TankScript : MonoBehaviour
                 WriteLog("Weapon: Bullet");
             }
         }
-        catch ( Exception e )
+        catch (Exception e)
         {
             WriteLog("Invalid Weapon: Nothing was selected.");
         }
     }
 
+    private void WriteLog(string text)
+    {
+        log.text = text;
+    }
+
     void ShootBullet()
-<<<<<<< HEAD
     {
         try
         {
@@ -95,99 +100,93 @@ public class TankScript : MonoBehaviour
             GameObject tempBullet = new GameObject();
             if (playerTurn)
             {
-                    tempBullet = Instantiate(weapon, player1.transform.position, Quaternion.identity);
-                    tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
+                tempBullet = Instantiate(weapon, player1.transform.position, Quaternion.identity);
+                tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
             }
             else
             {
-                    tempBullet = Instantiate(weapon, player2.transform.position, Quaternion.identity);
-                    tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
+                tempBullet = Instantiate(weapon, player2.transform.position, Quaternion.identity);
+                tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
             }
         }
-        catch ( NullReferenceException e )
+        catch (NullReferenceException e)
         {
             Debug.Log("INPUT A VALID WEAPON THROUGH THE POWER UPS!");
         }
-=======
-    { 
-        StartCoroutine(ProduceBullet());
-        var tempBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-        tempBullet.SendMessage("InitialVelocity", new Vector2(powerSlider.value * 5, angleSlider.value * 5));
-
->>>>>>> KiyanSchool
-    }
-
-    void FixedUpdate()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        rb2d.AddForce(movement * speed);
-    }
-
-    void WriteLog(string text)
-    {
-        log.text = text;
-    }
-
-    IEnumerator ProduceBullet()
-    {
-<<<<<<< HEAD
-        if (playerTurn)
         {
-            WriteLog( "Player 1: \n" +
-                      "Bullet shot with an X-Velocity of " + xPowerSlider.value + "\n" +
-                      "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
-            yield return new WaitForSeconds(2);
-            logBackground("Player 1: Bullet shot with an X-Velocity of " + xPowerSlider.value , "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
-            log.text = "Player 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
-            xPowerSlider.value = -50;
-            yPowerSlider.value = 0;
-=======
-        WriteLog("Bullet shot with the power of " + powerSlider.value + "\n" + 
-                 "Bullet shot with the angle of " + angleSlider.value);
-        yield return new WaitForSeconds(2);
-        if (playerTurn)
-        {
-            log.text = "Player 2's Turn";
->>>>>>> KiyanSchool
-            playerTurn = false;
+            StartCoroutine(ProduceBullet());
+            var tempBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+            tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 5, yPowerSlider.value * 5));
+
         }
-        else
-        {
-<<<<<<< HEAD
-            WriteLog( "Player 2: \n" + 
-                      "Bullet shot with an X-Velocity of " + xPowerSlider.value + "\n" +
-                      "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
-            logBackground(" Player 2: Bullet shot with an X-Velocity of " + xPowerSlider.value, "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
-            yield return new WaitForSeconds(2);
-            log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
-            xPowerSlider.value = 50;
-            yPowerSlider.value = 0;
-=======
-            log.text = "Player 1's Turn";
->>>>>>> KiyanSchool
-            playerTurn = true;
-        }
-    }
 
-    void logBackground( string x , string y )
-    {
-        if (playerTurn)
+        void FixedUpdate()
         {
-            Debug.Log(x + "\n" + y);
-            player1Logs[(int)player1Loc] = x + " " + y;
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
+            Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+            rb2d.AddForce(movement * speed);
         }
-        else
-        {
-            Debug.Log(x + "\n" + y);
-            player2Logs[(int)player2Loc] = x + " " + y;
-        }
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, areaOfEffect);
-    }
 
+        void WriteLog(string text)
+        {
+            log.text = text;
+        }
+
+        IEnumerator ProduceBullet()
+        {
+            if (playerTurn)
+            {
+                WriteLog("Player 1: \n" +
+                          "Bullet shot with an X-Velocity of " + xPowerSlider.value + "\n" +
+                          "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
+                yield return new WaitForSeconds(2);
+                logBackground("Player 1: Bullet shot with an X-Velocity of " + xPowerSlider.value, "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
+                log.text = "Player 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+                xPowerSlider.value = -50;
+                yPowerSlider.value = 0;
+                WriteLog("Bullet shot with the power of " + xPowerSlider.value + "\n" +
+                         "Bullet shot with the angle of " + yPowerSlider.value);
+                yield return new WaitForSeconds(2);
+                if (playerTurn)
+                {
+                    log.text = "Player 2's Turn";
+                    playerTurn = false;
+                }
+                else
+                {
+                    WriteLog("Player 2: \n" +
+                              "Bullet shot with an X-Velocity of " + xPowerSlider.value + "\n" +
+                              "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
+                    logBackground(" Player 2: Bullet shot with an X-Velocity of " + xPowerSlider.value, "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
+                    yield return new WaitForSeconds(2);
+                    log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+                    xPowerSlider.value = 50;
+                    yPowerSlider.value = 0;
+                    log.text = "Player 1's Turn";
+                    playerTurn = true;
+                }
+            }
+
+            void logBackground(string x, string y)
+            {
+                if (playerTurn)
+                {
+                    Debug.Log(x + "\n" + y);
+                    player1Logs[(int)player1Loc] = x + " " + y;
+                }
+                else
+                {
+                    Debug.Log(x + "\n" + y);
+                    player2Logs[(int)player2Loc] = x + " " + y;
+                }
+            }
+            void OnDrawGizmosSelected()
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(transform.position, areaOfEffect);
+            }
+
+        }
+    }
 }

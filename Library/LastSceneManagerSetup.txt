@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/PlayScene.unity
-=======
-- path: Assets/Scenes/MainMenu.unity
->>>>>>> KiyanSchool
+- path: Assets/Scenes/Characters Page 2.unity
   isLoaded: 1
   isActive: 1
