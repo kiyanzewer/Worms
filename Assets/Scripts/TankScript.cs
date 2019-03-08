@@ -87,6 +87,7 @@ public class TankScript : MonoBehaviour
     }
 
     void ShootBullet()
+<<<<<<< HEAD
     {
         try
         {
@@ -107,6 +108,13 @@ public class TankScript : MonoBehaviour
         {
             Debug.Log("INPUT A VALID WEAPON THROUGH THE POWER UPS!");
         }
+=======
+    { 
+        StartCoroutine(ProduceBullet());
+        var tempBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        tempBullet.SendMessage("InitialVelocity", new Vector2(powerSlider.value * 5, angleSlider.value * 5));
+
+>>>>>>> KiyanSchool
     }
 
     void FixedUpdate()
@@ -124,6 +132,7 @@ public class TankScript : MonoBehaviour
 
     IEnumerator ProduceBullet()
     {
+<<<<<<< HEAD
         if (playerTurn)
         {
             WriteLog( "Player 1: \n" +
@@ -134,10 +143,19 @@ public class TankScript : MonoBehaviour
             log.text = "Player 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
             xPowerSlider.value = -50;
             yPowerSlider.value = 0;
+=======
+        WriteLog("Bullet shot with the power of " + powerSlider.value + "\n" + 
+                 "Bullet shot with the angle of " + angleSlider.value);
+        yield return new WaitForSeconds(2);
+        if (playerTurn)
+        {
+            log.text = "Player 2's Turn";
+>>>>>>> KiyanSchool
             playerTurn = false;
         }
         else
         {
+<<<<<<< HEAD
             WriteLog( "Player 2: \n" + 
                       "Bullet shot with an X-Velocity of " + xPowerSlider.value + "\n" +
                       "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
@@ -146,6 +164,9 @@ public class TankScript : MonoBehaviour
             log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
             xPowerSlider.value = 50;
             yPowerSlider.value = 0;
+=======
+            log.text = "Player 1's Turn";
+>>>>>>> KiyanSchool
             playerTurn = true;
         }
     }

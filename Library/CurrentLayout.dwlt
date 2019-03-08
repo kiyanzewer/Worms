@@ -44,10 +44,17 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 681, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
   controlID: 68
+=======
+  m_MinSize: {x: 683, y: 498}
+  m_MaxSize: {x: 14004, y: 14048}
+  vertical: 0
+  controlID: 116
+>>>>>>> KiyanSchool
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,10 +98,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 404
     height: 572
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 408
+    height: 572
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> KiyanSchool
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -215,10 +229,17 @@ MonoBehaviour:
     y: 0
     width: 1360
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 404, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
   controlID: 81
+=======
+  m_MinSize: {x: 406, y: 498}
+  m_MaxSize: {x: 10002, y: 14048}
+  vertical: 1
+  controlID: 11
+>>>>>>> KiyanSchool
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,10 +261,17 @@ MonoBehaviour:
     y: 0
     width: 1360
     height: 572
+<<<<<<< HEAD
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
   controlID: 82
+=======
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
+  vertical: 0
+  controlID: 12
+>>>>>>> KiyanSchool
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,9 +287,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 404
     y: 0
     width: 956
+=======
+    x: 408
+    y: 0
+    width: 952
+>>>>>>> KiyanSchool
     height: 572
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
@@ -293,10 +327,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 284
-    y: 74
-    width: 860
-    height: 431
+    x: 468
+    y: 181
+    width: 973
+    height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -342,6 +376,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\marchatj19\Desktop\Worms
   m_LockTracker:
     m_IsLocked: 0
@@ -350,6 +385,16 @@ MonoBehaviour:
     m_SelectedIDs: 1e370000
     m_LastClickedID: 14110
     m_ExpandedIDs: 000000001c26000022260000382a0000842a0000cc2d00003e2e0000782f00008c310000963100009c31000040340000ac350000e4350000ce3700006e380000c438000000ca9a3b
+=======
+  m_LastProjectPath: C:\Users\zewerkk19\Desktop\Worms
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 921b0000
+    m_LastClickedID: 7058
+    m_ExpandedIDs: 0000000092090000280e0000ac15000084180000661b0000f01c000000ca9a3b
+>>>>>>> KiyanSchool
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +422,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000001c26000022260000382a0000842a0000cc2d00003e2e0000782f00008c310000963100009c31000040340000ac350000e4350000ce3700006e380000c4380000
+=======
+    m_ExpandedIDs: 0000000092090000280e0000ac15000084180000661b0000f01c0000
+>>>>>>> KiyanSchool
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -405,7 +454,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000ba0c000000000000
+=======
+    m_ExpandedInstanceIDs: c623000000000000
+>>>>>>> KiyanSchool
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -431,7 +484,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 263
+  m_DirectoriesAreaWidth: 115
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -490,15 +543,25 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 402
+=======
+    width: 406
+>>>>>>> KiyanSchool
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 92fbffff
       m_LastClickedID: -1134
       m_ExpandedIDs: 18efffffccfbffff6c3900001e3a0000
+=======
+      m_SelectedIDs: de560000
+      m_LastClickedID: 22238
+      m_ExpandedIDs: b8f6ffff22f7ffff76f7ffffcef7fffff8f7ffffbcf8ffffe6f8ffff00fbffff38fbffff62fbffffd4fbffff824d00007c510000165400004e550000c456000014570000
+>>>>>>> KiyanSchool
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -521,7 +584,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: c5ba70f8dd4c240beb2c71f7f1ca36f0
+  m_WindowGUID: 3cd2849a2b772da4097e7b1324801855
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -542,20 +605,32 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 404
     y: 73
     width: 952
+=======
+    x: 408
+    y: 73
+    width: 948
+>>>>>>> KiyanSchool
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_WindowGUID: 5fabb9aa1069a4b079f60211912bcd09
+  m_WindowGUID: c32d61869a8154a41a67bf5f7f207ac8
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -1.0308458, y: 0.5258922, z: -0.09657484}
     speed: 2
     m_Value: {x: -1.0308458, y: 0.5258922, z: -0.09657484}
+=======
+    m_Target: {x: 530.1355, y: 207.7237, z: -7.51015}
+    speed: 2
+    m_Value: {x: 530.1355, y: 207.7237, z: -7.51015}
+>>>>>>> KiyanSchool
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -587,9 +662,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 21.069073
     speed: 2
     m_Value: 21.069073
+=======
+    m_Target: 776.4665
+    speed: 2
+    m_Value: 776.4665
+>>>>>>> KiyanSchool
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -622,9 +703,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 404
     y: 73
     width: 952
+=======
+    x: 408
+    y: 73
+    width: 948
+>>>>>>> KiyanSchool
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
@@ -637,8 +724,13 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -476
     m_HBaseRangeMax: 476
+=======
+    m_HBaseRangeMin: -474
+    m_HBaseRangeMax: 474
+>>>>>>> KiyanSchool
     m_VBaseRangeMin: -267.5
     m_VBaseRangeMax: 267.5
     m_HAllowExceedBaseRangeMin: 1
@@ -658,25 +750,42 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 952
       height: 535
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 476, y: 267.5}
+=======
+      width: 948
+      height: 535
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 474, y: 267.5}
+>>>>>>> KiyanSchool
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -476
       y: -267.5
       width: 952
+=======
+      x: -474
+      y: -267.5
+      width: 948
+>>>>>>> KiyanSchool
       height: 535
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 952, y: 552}
+=======
+  m_LastWindowPixelSize: {x: 948, y: 552}
+>>>>>>> KiyanSchool
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -703,7 +812,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 645
     width: 1366
     height: 355
+=======
+    y: 646
+    width: 1529
+    height: 354
+>>>>>>> KiyanSchool
   m_PersistentViewDataDictionary: {fileID: 0}

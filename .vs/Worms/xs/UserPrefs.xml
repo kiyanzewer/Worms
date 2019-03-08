@@ -1,7 +1,19 @@
 ﻿<Properties StartupConfiguration="{0A04415E-1433-58DF-4245-4C127AFCAC80}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TankScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts (MainMenu)/LoadSceneOnClick.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets/Scripts/TankScript.cs" Line="1" Column="1" />
+=======
+<<<<<<< HEAD
+      <File FileName="Assets/Scripts/bulletScript.cs" Line="33" Column="1" />
+      <File FileName="Assets/Scripts/TankScript.cs" Line="53" Column="1" />
+      <File FileName="Assets/ShowValues.cs" Line="28" Column="1" />
+=======
+      <File FileName="Assets/Scripts/bulletScript.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/TankScript.cs" Line="52" Column="1" />
+      <File FileName="Assets/Scripts (MainMenu)/LoadSceneOnClick.cs" Line="10" Column="44" />
+>>>>>>> Kiyan
+>>>>>>> KiyanSchool
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
