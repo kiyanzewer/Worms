@@ -96,6 +96,12 @@ MonoBehaviour:
   powerSlider: {fileID: 1411234462721508315, guid: 8c674084146d749c5830969267edda91,
     type: 3}
   r2d: {fileID: 4249172472793539118}
+  areaOfEffect: 1
+  destructible:
+    serializedVersion: 2
+    m_Bits: 512
+  environmentDamage: 2
+  effect: {fileID: 0}
 --- !u!50 &4249172472793539118
 Rigidbody2D:
   serializedVersion: 4

@@ -8,7 +8,6 @@ public class bulletScript : MonoBehaviour
     // Public variable 
     public Slider powerSlider;
     public Rigidbody2D r2d;
-    private Vector2 movement;
     public float areaOfEffect;
     public LayerMask destructible;
     public int environmentDamage;
