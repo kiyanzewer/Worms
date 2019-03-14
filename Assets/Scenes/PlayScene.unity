@@ -596,6 +596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank2
       objectReference: {fileID: 0}
+    - target: {fileID: 181536, guid: dc3ba7ed85285e84aa542b45dda7ccbb, type: 3}
+      propertyPath: m_TagString
+      value: Player 2
+      objectReference: {fileID: 0}
     - target: {fileID: 433560, guid: dc3ba7ed85285e84aa542b45dda7ccbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.09
@@ -1261,9 +1265,11 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Bullet
       m_Image: {fileID: 0}
-    - m_Text: Bullet Mirage
+    - m_Text: Saw
       m_Image: {fileID: 0}
     - m_Text: Laser
+      m_Image: {fileID: 0}
+    - m_Text: Special Ability
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1458,6 +1464,12 @@ CanvasRenderer:
 --- !u!1 &544555408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 137050, guid: 0ee64ff31b8ad344782ee63849d96932,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938404648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &544555410 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
     type: 3}
   m_PrefabInstance: {fileID: 1938404648}
   m_PrefabAsset: {fileID: 0}
@@ -2644,6 +2656,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 185990664}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1188879997 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 5542725357572468326, guid: dc3ba7ed85285e84aa542b45dda7ccbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 185990664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1275041098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,6 +3736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank1
       objectReference: {fileID: 0}
+    - target: {fileID: 137050, guid: 0ee64ff31b8ad344782ee63849d96932, type: 3}
+      propertyPath: m_TagString
+      value: Player 1
+      objectReference: {fileID: 0}
     - target: {fileID: 482908, guid: 0ee64ff31b8ad344782ee63849d96932, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.01
@@ -3847,6 +3869,16 @@ PrefabInstance:
       propertyPath: destructible.m_Bits
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 8440192217873549599, guid: 0ee64ff31b8ad344782ee63849d96932,
+        type: 3}
+      propertyPath: player1RB
+      value: 
+      objectReference: {fileID: 544555410}
+    - target: {fileID: 8440192217873549599, guid: 0ee64ff31b8ad344782ee63849d96932,
+        type: 3}
+      propertyPath: player2RB
+      value: 
+      objectReference: {fileID: 1188879997}
     - target: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
         type: 3}
       propertyPath: m_LinearDrag
