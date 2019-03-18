@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":638.6107177734375,"y":188.58067321777345,"z":-11.735642433166504},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":1133.152099609375,"orthographic":true}
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":499.58355712890627,"y":201.14230346679688,"z":-7.076604843139648},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":694.7932739257813,"orthographic":true}
->>>>>>> Integration
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":505.43170166015627,"y":278.3650817871094,"z":-6.875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":649.921875,"orthographic":true}
