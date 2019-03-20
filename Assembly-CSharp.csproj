@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\DragPanel.cs" />
     <Compile Include="Assets\Scripts\DropMe.cs" />
     <Compile Include="Assets\Scripts\Health Script.cs" />
+    <Compile Include="Assets\Scripts\OnClickPlay.cs" />
     <Compile Include="Assets\Scripts\OnClickPlayer.cs" />
     <Compile Include="Assets\Scripts\OnClickSelect.cs" />
     <Compile Include="Assets\Scripts\PanelManager.cs" />

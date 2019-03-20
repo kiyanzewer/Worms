@@ -14,17 +14,21 @@ public class OnClickSelect : MonoBehaviour
     public Button select;
     public Button menu;
     public static bool ready = false;
+    public static String player1Name;
+    public static String player2Name;
 
     public void OnClick()
     {
         if (player1.text.Length > 10)
         {
+            player1Name = player1.text.Substring(11);
             menu.interactable = false;
             clickCounter++;
             current.text = "Currently: Player 2";
             currentPlayer = 2;
             if (player2.text.Length > 10 && clickCounter >= 2)
             {
+                player2Name = player2.text.Substring(11);
                 select.interactable = false;
                 ready = true;
             }
@@ -39,5 +43,15 @@ public class OnClickSelect : MonoBehaviour
     public static bool getReady()
     {
         return ready;
+    }
+
+    public static String getPlayer1Name()
+    {
+        return player1Name;
+    }
+
+    public static String getPlayer2Name()
+    {
+        return player2Name;
     }
 }

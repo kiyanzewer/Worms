@@ -1338,8 +1338,9 @@ MonoBehaviour:
     are three players playing they will only move once at a time. Player 1 will get
     to move and click end turn. Then their bird will do actions such as attacking
     or defending. Next, Player 2 will get to do the same thing. Each player will have
-    a certain amount of health and as they are attacked they will lose health. This
-    will continue until there is only one worm left flying.
+    a certain amount of health and as they are attacked they will lose health. Also,
+    each round has a time limit for the player for their turn. This will continue
+    until there is only one bird left flying.
 
 
     Player Selection: Before you can play the game you must select a character that

@@ -1467,6 +1467,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1938404648}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &544555409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544555408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ae8ddb71df69b45b565db81e6ceb79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CalvinSprite: {fileID: 21300000, guid: 98cd6f83e0b56d04780ec0cfdc10f5fb, type: 3}
 --- !u!50 &544555410 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
@@ -3740,6 +3753,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 482908, guid: 0ee64ff31b8ad344782ee63849d96932, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.01
@@ -3879,16 +3902,6 @@ PrefabInstance:
       propertyPath: player2RB
       value: 
       objectReference: {fileID: 1188879997}
-    - target: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 8426627483284219487, guid: 0ee64ff31b8ad344782ee63849d96932,
         type: 3}
       propertyPath: m_IsTrigger
