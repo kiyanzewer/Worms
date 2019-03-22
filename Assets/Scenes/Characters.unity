@@ -1832,7 +1832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 354.99997, y: -79}
+  m_AnchoredPosition: {x: 305.00003, y: -15.999996}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980805886
@@ -2143,7 +2143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 355, y: -16}
+  m_AnchoredPosition: {x: 368, y: -16}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041883848
@@ -2820,6 +2820,7 @@ GameObject:
   - component: {fileID: 1310048896}
   - component: {fileID: 1310048895}
   - component: {fileID: 1310048894}
+  - component: {fileID: 1310048898}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2949,6 +2950,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310048892}
   m_CullTransparentMesh: 0
+--- !u!114 &1310048898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310048892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa74a40ec7ae69e4caf210087c985a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  play: {fileID: 1310048895}
 --- !u!1 &1373595414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3821,6 +3835,7 @@ MonoBehaviour:
   player2: {fileID: 285031975}
   select: {fileID: 1693425210}
   menu: {fileID: 1284390369}
+  play: {fileID: 1310048895}
 --- !u!114 &1693425210
 MonoBehaviour:
   m_ObjectHideFlags: 0

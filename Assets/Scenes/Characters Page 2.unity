@@ -267,10 +267,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fabadacf25a19645ac6516e75657a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  current: {fileID: 1850370028}
+  current: {fileID: 0}
   player1: {fileID: 1730493510}
   player2: {fileID: 483349283}
   select: {fileID: 8544092}
+  menu: {fileID: 0}
+  play: {fileID: 0}
 --- !u!1 &18270298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,6 +3643,7 @@ GameObject:
   - component: {fileID: 1850370027}
   - component: {fileID: 1850370029}
   - component: {fileID: 1850370028}
+  - component: {fileID: 1850370030}
   m_Layer: 5
   m_Name: Currently
   m_TagString: Untagged
@@ -3709,6 +3712,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850370026}
   m_CullTransparentMesh: 0
+--- !u!114 &1850370030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850370026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a253b8da74ba5ab41ad74478a1eb98c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 1850370028}
 --- !u!1 &1868843263
 GameObject:
   m_ObjectHideFlags: 0

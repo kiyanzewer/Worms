@@ -1480,6 +1480,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CalvinSprite: {fileID: 21300000, guid: 98cd6f83e0b56d04780ec0cfdc10f5fb, type: 3}
+  KiyanSprite: {fileID: 21300000, guid: 1adfd344142bd494a937a8e81c4fc814, type: 3}
+  JustinSprite: {fileID: 21300000, guid: 1dd9d6c9e5b9f0d4db37d9c4919f354e, type: 3}
+  NickSprite: {fileID: 21300000, guid: 4612ecc606f85c44d8cba1004e82f8d3, type: 3}
+  ColtonSprite: {fileID: 21300000, guid: 8be2f50f2ce00874e8082aacf9193e58, type: 3}
+  StephenSprite: {fileID: 21300000, guid: 34fa67d5401355a409d2fdaedd2cedb5, type: 3}
 --- !u!50 &544555410 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 8461492538500516897, guid: 0ee64ff31b8ad344782ee63849d96932,
@@ -2669,6 +2674,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 185990664}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1188879996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188879995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e697af6f71f214babde60315814cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CalvinSprite: {fileID: 21300000, guid: 98cd6f83e0b56d04780ec0cfdc10f5fb, type: 3}
+  KiyanSprite: {fileID: 21300000, guid: 1adfd344142bd494a937a8e81c4fc814, type: 3}
+  JustinSprite: {fileID: 21300000, guid: 1dd9d6c9e5b9f0d4db37d9c4919f354e, type: 3}
+  NickSprite: {fileID: 21300000, guid: 4612ecc606f85c44d8cba1004e82f8d3, type: 3}
+  ColtonSprite: {fileID: 21300000, guid: 8be2f50f2ce00874e8082aacf9193e58, type: 3}
+  StephenSprite: {fileID: 21300000, guid: 34fa67d5401355a409d2fdaedd2cedb5, type: 3}
 --- !u!50 &1188879997 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5542725357572468326, guid: dc3ba7ed85285e84aa542b45dda7ccbb,
