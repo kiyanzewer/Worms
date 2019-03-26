@@ -121,12 +121,17 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 379
     height: 573
+<<<<<<< HEAD
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+=======
 =======
     width: 284
     height: 451
 >>>>>>> CalvinMAC
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> master
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -444,6 +449,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+    m_SelectedIDs: 901b0000
+    m_LastClickedID: 7056
+    m_ExpandedIDs: 0000000090090000260e0000aa15000082180000641b0000ee1c000000ca9a3b
+=======
+<<<<<<< HEAD
     m_SelectedIDs: 701b0000
     m_LastClickedID: 7024
     m_ExpandedIDs: 0000000090090000160e00009015000062180000441b0000ce1c000000ca9a3b
@@ -452,6 +462,7 @@ MonoBehaviour:
     m_LastClickedID: 9950
     m_ExpandedIDs: 000000006a090000d00d0000d8140000e21400008a170000b61b0000
 >>>>>>> CalvinMAC
+>>>>>>> master
 =======
     m_SelectedIDs: 741b0000
     m_LastClickedID: 7028
@@ -487,11 +498,17 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+    m_ExpandedIDs: 0000000090090000260e0000aa15000082180000641b0000ee1c0000
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000090090000160e00009015000062180000441b0000ce1c0000
 =======
     m_ExpandedIDs: 000000006a090000d00d0000d8140000e21400008a170000b61b0000
 >>>>>>> CalvinMAC
 =======
+>>>>>>> master
     m_ExpandedIDs: 0000000040260000ca2a000052320000243500000638000090390000
 =======
     m_ExpandedIDs: 00000000900900001a0e00009215000066180000481b0000d21c0000
@@ -625,6 +642,11 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+      m_SelectedIDs: 681e0000
+      m_LastClickedID: 7784
+      m_ExpandedIDs: d2fbffffd4fbffffae1e0000
+=======
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD

@@ -1,5 +1,8 @@
 sceneSetups:
 <<<<<<< HEAD
+- path: Assets/Scenes/Characters.unity
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - path: Assets/Scenes/Characters.unity
 =======
@@ -7,6 +10,7 @@ sceneSetups:
 >>>>>>> CalvinMAC
 =======
 - path: Assets/Scenes/MainMenu.unity
+>>>>>>> master
 >>>>>>> master
   isLoaded: 1
   isActive: 1
