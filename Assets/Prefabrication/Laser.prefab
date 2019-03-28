@@ -121,5 +121,6 @@ MonoBehaviour:
   destructible:
     serializedVersion: 2
     m_Bits: 512
-  environmentDamage: 2
+  environmentDamage: 10
   effect: {fileID: 0}
+  damagePower: 10

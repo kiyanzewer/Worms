@@ -4,13 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TankScript : MonoBehaviour
+public class TankScript : Destructable
 {
     private Rigidbody2D rb2d;
     private System.Random randomNum;
-    private bool playerTurn;
+    public bool playerTurn;
     private float player1Loc = 0;
     private float player2Loc = 0;
+    private bool canMove;
+    private int turnCounter = 1;
 
     //Arrays the hold post-game numerical stats
     private string[] player1Logs = new string[100];
@@ -59,10 +61,13 @@ public class TankScript : MonoBehaviour
         powerBtn.interactable = true;
 
         //Initalizes the player's Turn and values on the sliders
-        log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+        turnCounter = 1;
+        log.text = "Turn " + turnCounter + "\nPlayer 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
         playerTurn = true;
+        canMove = true;
         xPowerSlider.value = 50;
         yPowerSlider.value = 0;
+        turnCounter = 1;
     }
 
 
@@ -70,6 +75,41 @@ public class TankScript : MonoBehaviour
     void Update()
     {
         Jump();
+        movement();
+    }
+
+    //Allows movement for the character on their turn -- Only Right or Left
+    void movement()
+    {
+        if (canMove)
+        {
+            if (playerTurn)
+            {
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    player1RB.AddForce(new Vector2(100, 0));
+                    canMove = !canMove;
+                }
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    player1RB.AddForce(new Vector2(-100, 0));
+                    canMove = !canMove;
+                }
+            }
+            else if (!playerTurn)
+            {
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    player2RB.AddForce(new Vector2(100, 0));
+                    canMove = !canMove;
+                }
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    player2RB.AddForce(new Vector2(-100, 0));
+                    canMove = !canMove;
+                }
+            }
+        }
     }
 
     //Method that adds an upward force to the tank when the "jump" button is clicked
@@ -100,13 +140,18 @@ public class TankScript : MonoBehaviour
             Debug.Log("Power Up is changed to " + powerUpsDropdown.options[powerUpsDropdown.value].text);
             if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Laser")
             {
-                weapon = laser;
-                WriteLog("Weapon: Laser");
+                weapon = bullet;
+                WriteLog("Weapon: Bullet\nLaser is not implemented yet.");
             }
             else if (powerUpsDropdown.options[powerUpsDropdown.value].text == "Saw")
             {
-                weapon = saw;
-                WriteLog("Weapon: Saw");
+                weapon = bullet;
+                WriteLog("Weapon: Bullet\nSaw is not implemented yet.");
+            }
+            else if ( powerUpsDropdown.options[powerUpsDropdown.value].text == "Special Ability")
+            {
+                weapon = bullet;
+                WriteLog("Weapon: Bullet\nSpecial Abilities are not implemented yet.");
             }
             else
             {
@@ -129,20 +174,23 @@ public class TankScript : MonoBehaviour
     //Creates the 'Weapon' and spawns it with an initial velocity given by the sliders
     void ShootBullet()
     {
+        turnCounter++;
         powerUps.interactable = true;
         fireButton.interactable = false;
         try
         {
-            StartCoroutine(ProduceBullet());
+            StartCoroutine(ChangePlayer());
             GameObject tempBullet = new GameObject();
             if (playerTurn)
             {
                 tempBullet = Instantiate(weapon, player1.transform.position, Quaternion.identity);
+                //tempBullet.SendMessage("changeTurn");
                 tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
             }
             else
             {
                 tempBullet = Instantiate(weapon, player2.transform.position, Quaternion.identity);
+                //tempBullet.SendMessage("changeTurn");
                 tempBullet.SendMessage("InitialVelocity", new Vector2(xPowerSlider.value * 7, yPowerSlider.value * 7));
             }
         }
@@ -152,6 +200,7 @@ public class TankScript : MonoBehaviour
         }
     }
 
+    /*
     //Test Method for movement
     void FixedUpdate()
     {
@@ -160,10 +209,12 @@ public class TankScript : MonoBehaviour
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rb2d.AddForce(movement * speed);
     }
+    */
 
     //Changes that need to be made on the screen when players change turns
-    IEnumerator ProduceBullet()
+    IEnumerator ChangePlayer()
     {
+        canMove = true;
         if (playerTurn)
         {
             WriteLog("Player 1: \n" +
@@ -171,11 +222,9 @@ public class TankScript : MonoBehaviour
                       "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
             yield return new WaitForSeconds(2);
             logBackground("Player 1: Bullet shot with an X-Velocity of " + xPowerSlider.value, "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
-            log.text = "Player 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+            log.text = "Turn " + turnCounter + "\nPlayer 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
             xPowerSlider.value = -50;
             yPowerSlider.value = 0;
-            playerTurn = false;
-            log.text = "Player 2's Turn"; 
             playerTurn = false;
         }
         else
@@ -185,10 +234,9 @@ public class TankScript : MonoBehaviour
                       "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
             logBackground(" Player 2: Bullet shot with an X-Velocity of " + xPowerSlider.value, "Bullet shot with a Y-Velocity of " + yPowerSlider.value);
             yield return new WaitForSeconds(2);
-            log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+            log.text = "Turn " + turnCounter + "\nPlayer 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
             xPowerSlider.value = 50;
             yPowerSlider.value = 0;
-            log.text = "Player 1's Turn";
             playerTurn = true;
         }
     }
@@ -222,4 +270,16 @@ public class TankScript : MonoBehaviour
             isGrounded = true;
         }
     }
+
+    public bool getPlayerTurn()
+    {
+        return playerTurn;
+    }
+
+    /*
+    private void OnBecameInvisible()
+    {
+        WriteLog("Game Over \n" + "The game ended on turn " + turnCounter);
+    }
+    */
 }

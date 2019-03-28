@@ -100,8 +100,9 @@ MonoBehaviour:
   destructible:
     serializedVersion: 2
     m_Bits: 512
-  environmentDamage: 2
+  environmentDamage: 10
   effect: {fileID: 0}
+  damagePower: 10
 --- !u!50 &4249172472793539118
 Rigidbody2D:
   serializedVersion: 4

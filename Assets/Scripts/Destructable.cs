@@ -21,4 +21,15 @@ public class Destructable : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    void takeDamage( int damage)
+    {
+        health -= damage;
+        Debug.Log("Taken damage " + damage + "\nHeath is now " + health);
+    }
+
+    int getHealth()
+    {
+        return health;
+    }
 }
