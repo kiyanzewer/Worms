@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\getCurrentPlayer.cs" />
+    <Compile Include="Assets\OnStartHideImages.cs" />
+    <Compile Include="Assets\OnStartHideText.cs" />
     <Compile Include="Assets\Scripts (MainMenu)\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />

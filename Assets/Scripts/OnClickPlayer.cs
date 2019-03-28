@@ -8,6 +8,8 @@ public class OnClickPlayer : MonoBehaviour
     public Text player1;
     public Text player2;
     public Button select;
+    public Image sprite;
+    public Image power;
 
     public void OnClick(string name)
     {
@@ -22,5 +24,7 @@ public class OnClickPlayer : MonoBehaviour
                 player2.text = "Player 2: " + name;
             }
         }
+        sprite.enabled = true;
+        power.enabled = true;
     }
 }
