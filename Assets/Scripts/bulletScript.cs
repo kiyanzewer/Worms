@@ -59,6 +59,7 @@ public class bulletScript : MonoBehaviour
             {
                 objectsToDamage[i].GetComponent<Destructable>().health -= environmentDamage;
             }
+            Debug.Log("Weapon did " + environmentDamage + " damage to the environment");
             Destroy(gameObject);
         }
     }

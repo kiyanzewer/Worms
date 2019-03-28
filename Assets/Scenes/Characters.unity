@@ -796,7 +796,6 @@ MonoBehaviour:
   select: {fileID: 1693425210}
   sprite: {fileID: 1506913735}
   power: {fileID: 1430876421}
-  powerUp: {fileID: 150774093}
 --- !u!1 &385069447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,7 +2416,6 @@ MonoBehaviour:
   select: {fileID: 1693425210}
   sprite: {fileID: 1041883848}
   power: {fileID: 980805886}
-  powerUp: {fileID: 846029924}
 --- !u!1 &1171456053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,7 +2563,6 @@ MonoBehaviour:
   select: {fileID: 1693425210}
   sprite: {fileID: 1448615478}
   power: {fileID: 1976579902}
-  powerUp: {fileID: 945081087}
 --- !u!1001 &1198522314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3203,7 +3200,6 @@ MonoBehaviour:
   select: {fileID: 1693425210}
   sprite: {fileID: 574833531}
   power: {fileID: 459315857}
-  powerUp: {fileID: 890447079}
 --- !u!1 &1380347083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,7 +3826,6 @@ MonoBehaviour:
   select: {fileID: 1693425210}
   sprite: {fileID: 2143229138}
   power: {fileID: 429096916}
-  powerUp: {fileID: 1289033098}
 --- !u!1 &1506913733
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,7 +4543,6 @@ MonoBehaviour:
   select: {fileID: 1693425210}
   sprite: {fileID: 637183828}
   power: {fileID: 1827878241}
-  powerUp: {fileID: 1441094429}
 --- !u!1 &2094928055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4602,7 +4596,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.3
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

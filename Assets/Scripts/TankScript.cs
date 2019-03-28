@@ -43,12 +43,15 @@ public class TankScript : Destructable
     public int damage;
     public GameObject effect;
     public Boolean isGrounded = true;
+    public CountdownTimer timer;
 
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        GameObject go = GameObject.Find("TimeController");
+        timer = (CountdownTimer)go.GetComponent(typeof(CountdownTimer));
 
         //Sets a listener to a firebutton
         Button btn = fireButton.GetComponent<Button>();
@@ -76,7 +79,32 @@ public class TankScript : Destructable
     {
         Jump();
         movement();
+        if (timer.ReturnTime() == true)
+        {
+            playerTurn = !playerTurn;
+            StartCoroutine(SkipTurn());
+            timer.Reset();
+        }
     }
+    //Skips turn if they run out of time
+    IEnumerator SkipTurn()
+    {
+        WriteLog("You took too much time");
+        yield return new WaitForSeconds(2);
+        if (playerTurn)
+        {
+            log.text = "Player 2's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+            xPowerSlider.value = -50;
+            yPowerSlider.value = 0;
+        }
+        else
+        {
+            log.text = "Player 1's Turn" + "\n" + "Select a Power-Up and Press the 'Submit' Button";
+            xPowerSlider.value = 50;
+            yPowerSlider.value = 0;
+        }
+    }
+
 
     //Allows movement for the character on their turn -- Only Right or Left
     void movement()
@@ -174,6 +202,7 @@ public class TankScript : Destructable
     //Creates the 'Weapon' and spawns it with an initial velocity given by the sliders
     void ShootBullet()
     {
+        timer.Reset();
         turnCounter++;
         powerUps.interactable = true;
         fireButton.interactable = false;
